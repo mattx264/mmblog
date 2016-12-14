@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[Tag]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+	[Description] NVARCHAR(100) NOT NULL,
+	[Active] Bit NOT NULL DEFAULT 1,
+	[DateAdded] DATETIME NOT NULL,
+	[DateCreated] DATETIME NOT NULL,
+	[CreatedBy] NVARCHAR(100) NOT NULL,
+	[ModifiedBy] NVARCHAR(100) NOT NULL
+)
